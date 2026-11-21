@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Мой магазин</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f2f2f2;
+}
+
+/* Задание 1: шапка сайта */
+header {
+    background: purple;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Задание 2: карточки товаров */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    flex: 1 1 240px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+button {
+    background: purple;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+}
+
+/* Задание 3: центрирование */
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background: #ddd;
+}
+
+.center div {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h2>Мой магазин</h2>
+
+    <nav>
+        <a href="#">Главная</a>
+        <a href="#">Товары</a>
+        <a href="#">Контакты</a>
+    </nav>
+</header>
+
+<h2 style="text-align:center;">Наши товары</h2>
+
+<div class="cards">
+
+    <div class="card">
+        <h3>Телефон</h3>
+        <p>Современный смартфон</p>
+        <h3>15 000$</h3>
+        <button>Купить</button>
+    </div>
+
+    <div class="card">
+        <h3>Наушники</h3>
+        <p>Хороший звук и качество</p>
+        <h3>3 000000$</h3>
+        <button>Купить</button>
+    </div>
+
+    <div class="card">
+        <h3>Часы</h3>
+        <p>Удобные умные часы</p>
+        <h3>5 000 ₽</h3>
+        <button>Купить</button>
+    </div>
+
+</div>
+
+<div class="center">
+    <div>
+        <h3>Добро пожаловать!</h3>
+        <p>Я изучаю Flexbox</p>
+    </div>
+</div>
+
+</body>
+</html>
